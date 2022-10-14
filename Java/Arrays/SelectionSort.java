@@ -57,7 +57,7 @@ class SelectionSort {
 
     // Driver code to test above
     public static void main(String args[]) {
-        SelectionSort ob = new SelectionSortSelectionSort();
+        SelectionSort ob = new SelectionSort();
         int arr[] = { 7, 4, 10, 8, 3, 1, };
         ob.sort(arr);
         System.out.println("Sorted array");
