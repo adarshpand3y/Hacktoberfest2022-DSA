@@ -22,6 +22,10 @@ It has explained everything required to get started with Hacktoberfest. Click th
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/abFj2x59o6c/0.jpg)](https://www.youtube.com/watch?v=abFj2x59o6c)
 
+## What are the benefits of participating in Hacktoberfest 
+
+Hacktoberfest is one such event from DigitalOcean that encourages you to contribute back to your favorite projects. In exchange for your contributions, you either get a gift from DigitalOcean, or you can choose to plant a tree instead. In Hacktoberfest, You just need to make five contributions to open source before October 31 and can receive a free Hacktoberfest t-shirt. 2022 Hactoberfest tshirts
+
 ## Contributing & Guidelines 👀
 
 Contributions are always welcome!
