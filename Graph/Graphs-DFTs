@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int a[5]={0};string s,op;
+void dft(int g[][5],int n,int c)
+{
+   if(a[n]==0) c++,s += to_string(n),s=s+' ',op=s,a[n]=1;
+   if(c==5) {std::cout << op << std::endl;dft(g,0,0);}
+   for(int j=0;j<5;j++)
+   if(g[n][j]==1 && a[j]==0)
+    {int t=j;dft(g,j,c);s=s.substr(0,s.length()-2);a[t]=0;}
+}
+int main()
+{
+    int g[5][5]={{0,1,1,1,0},
+                 {1,0,1,0,1},
+                 {1,1,0,1,0},
+                 {1,0,1,0,1},
+                 {0,1,0,1,0}};
+                dft(g,0,0);
+}
+
+
