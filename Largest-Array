@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int Largest(int arr[], int n)
+{
+    int res = 0;
+    for (int i = 1; i < n; i++)
+        if (arr[i] > res)
+            res = arr[i];
+    return res;
+}
+
+int main()
+{
+    int arr[] = {5, 9, 12, 24, 1, 15};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Largest in an array : " << Largest(arr, n);
+
+    return 0;
+}
