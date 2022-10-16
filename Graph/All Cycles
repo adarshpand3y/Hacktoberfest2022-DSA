@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+void cycle(int g[][5], int i,int f, int &flag,string s)
+{
+    if(i==f && flag==1) {cout<<s<<endl;return;}
+    flag=1;
+    for(int k=0;k<5;k++)
+    if(g[i][k]>0)
+    s += to_string(k),s=s+' ',cycle(g,k,f,flag,s),s=s.substr(0,s.length()-2);
+}
+int main()
+{
+    int g[5][5]={0};
+    int x,y;
+    while(cin>>x>>y && x!=-1) g[x][y]=1;
+    x=y=0;
+    string s={"0 "};
+    cycle(g,x,y,x,s);
+}
