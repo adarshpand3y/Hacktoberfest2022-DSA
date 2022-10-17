@@ -1,5 +1,5 @@
 def search(arr, N, x):
- 
+    ''' Search function. '''
     for i in range(0, N):
         if (arr[i] == x):
             return i
