@@ -1,0 +1,64 @@
+class Heap{
+    private int size;
+    private int[] items;
+    private int tempsize;
+    public Heap(int capacity){
+        size=capacity;
+        items=new int[size];
+        this.tempsize=0;
+    }
+    public void swap(int a,int b){
+        int temp;
+        temp=items[a];
+        items[a]=items[b];
+        items[b]=temp;
+    }
+    public void insert(int data){
+        items[tempsize]=data;
+        int currInd=tempsize;
+        if(currInd>0){
+          while(items[currInd]<items[(int)((currInd-1)/2)]){
+              swap(currInd,(int)((currInd-1)/2));
+              currInd=(int)((currInd-1)/2); 
+          }
+        }
+        
+        tempsize++;
+    }
+        public void display(){
+        // for(int i=0;i<tempsize/2;i++){
+        //     System.out.println("PARENT :"+items[i]+" "+"LEFTCHILD :"+items[i*2+1]+" RIGHTCHILD :"+items[i*2+2]);
+        // }
+        for(int i=0;i<tempsize;i++){
+            System.out.print(items[i]+" ");
+        }
+    }
+    
+    public int maxvalue(){
+        return items[0];
+    }
+    public int minvalue(){
+        return items[tempsize-1];
+    }
+}
+ public class Main
+{
+	public static void main(String[] args) {
+		Heap minHeap=new Heap(15);
+		 minHeap.insert(5);
+        minHeap.insert(3);
+        minHeap.insert(17);
+        minHeap.insert(10);
+        minHeap.insert(84);
+        minHeap.insert(19);
+        minHeap.insert(6);
+        minHeap.insert(22);
+        minHeap.insert(9);
+		minHeap.display();
+		System.out.println("done");
+
+	}
+}
+
+
+
