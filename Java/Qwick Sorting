@@ -1,0 +1,54 @@
+import java.util.Arrays;
+public class Main
+{
+    public static int partition(int[] a,int lb, int ub){
+        int pivot=a[ub];
+        int pindex=lb;
+        
+        for(int i=lb;i<ub;i++){
+            if(a[i]<=pivot){
+                int t=a[i];
+                a[i]=a[pindex];
+                a[pindex]=t;
+                pindex++;
+            }
+        }
+        int te=a[ub];
+        a[ub]=a[pindex];
+        a[pindex]=te;
+        return pindex;
+    }
+    
+
+    
+    
+	public static void main(String[] args) {
+    	    int[] a={24,9,29,14,19,27};
+	    Main obj=new Main();
+	    System.out.println("Unsorted Array");
+    System.out.println(Arrays.toString(a));
+    
+    
+	    int size=a.length;
+	   
+	    obj.sortfun(a,0,size-1);
+	    
+	    System.out.println("Sorted Array in Ascending Order: ");
+     for(int i=0;i<a.length;i++){
+         System.out.print(a[i]+" ");
+     }
+	}
+	
+	
+	 
+    public void sortfun(int[] a,int lb,int ub){
+        int index;
+        if(lb<ub){
+             index=partition(a,lb,ub);
+            sortfun(a,lb,index-1);
+            sortfun(a,index+1,ub);
+        }
+    }
+}
+
+
