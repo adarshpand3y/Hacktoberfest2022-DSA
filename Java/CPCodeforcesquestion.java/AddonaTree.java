@@ -2,7 +2,7 @@
 import java.awt.*;
 import java.util.*;
 import java.io.*;
-public class addonatree {
+public class AddonaTree {
     static LinkedList<Integer>[] adj;
     public static void main(String[] args){
         FastReader sc = new FastReader();
