@@ -1,7 +1,7 @@
 # Implemented Quick Sort Algorithm in Python
 # GitHub username ~ milind64
 
-def partition(array, low, high):
+def partition(array, low, high):     # function to create partition
 
 	pivot = array[high]
 
@@ -16,7 +16,7 @@ def partition(array, low, high):
 
 	return i + 1
 
-def quick_sort(array, low, high):
+def quick_sort(array, low, high):         # function to quick_sort  
 	if low < high:
 
 		pi = partition(array, low, high)
