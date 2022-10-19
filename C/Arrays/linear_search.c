@@ -1,21 +1,30 @@
 #include <stdio.h>
+#include <string.h>
 
-int search(int arr[], int N, int x) {
-    int i;
-    for (i = 0; i < N; i++)
-        if (arr[i] == x)
-            return i;
-    return -1;
-}
-
-int main(void) {
-    int arr[] = { 2, 3, 4, 10, 40 };
-    int x = 10;
-    int N = sizeof(arr) / sizeof(arr[0]);
-    int result = search(arr, N, x);
-    if(result == -1)
-        printf("Element is not present in array");
-    else
-        printf("Element is present at index %d", result);
+int main()
+{
+    char array[100][100], str[10];
+    int n, i, j;
+    printf("Number of strings:\n");
+    scanf("%d", &n);
+    printf("Enter the strings:\n");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%s", array[i]);
+    }
+    printf("Enter the string to search:\n");
+    scanf("%s", str);
+    for (j = 0; j < n; j++)
+    {
+        if (strcmp(str, array[j]) == 0)
+        {
+            printf("%s was found at index: %d", str, j);
+            break;
+        }
+        if (j == n)
+        {
+            printf("%s not found in array.", str);
+        }
+    }
     return 0;
 }
