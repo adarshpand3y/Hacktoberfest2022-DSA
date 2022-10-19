@@ -17,8 +17,8 @@ requests for programs containing code for any
 
 ## About Hacktoberfest 🤖
 
-Below is a video explaining what Hacktoberfest is. Watch it and register in hacktoberfest 2022.
-It has explained everything required to get started with Hacktoberfest. Click the image below to open.
+Below is a video explaining what Hacktoberfest is. Watch it and register for hacktoberfest 2022.
+It has explained everything required to get started with Hacktoberfest. Click the image below to open it.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/abFj2x59o6c/0.jpg)](https://www.youtube.com/watch?v=abFj2x59o6c)
 
@@ -33,10 +33,10 @@ more awesome content.
 By contributing to this project, you adhere to this project's code of conduct. They are as follows:-
 
 - Your code must be properly formatted.
-- The code you contribute you must be your own.
-- Your code must be error and bug free.
-- File structure must be proper. You must write the code for a particular language in that particular folder. For example, write Java code in the `Java` folder and Python code in `Python` folder, etc.
-- Inside a folder, write the program in a subfolder for that particular topic. For example, write Array programs in `Array` folder, Linked List programs in `LinkedList` folder, etc.
+- The code you contribute must be your own.
+- Your code must be error and bug-free.
+- The file structure must be proper. You must write the code for a particular language in that particular folder. For example, write Java code in the `Java` folder and Python code in the `Python` folder, etc.
+- Inside a folder, write the program in a subfolder for that particular topic. For example, write Array programs in the `Array` folder, Linked List programs in the `LinkedList` folder, etc.
 - Make sure you exclude the auto-generated files by adding them in `.gitignore`.
 - Do **not** spam.
 
@@ -88,19 +88,19 @@ If you could not follow these steps, here is a video explaining how to contribut
 ## Tech Stack ✨
 
 We do not limit your knowledge. Hence we accept all programming languages.
-You should, however, write your code for a particular language in a that
+You should, however, write your code for a particular language in that
 particular folder. In case a folder does not exist for a particular language,
 create one. Failing to do so will result in your pull request getting rejected.
 
 If you are a beginner and do not know which language to get started with, C, C++,
-Java or Python is recommended. These are some standard languages to start your
+Java, or Python is recommended. These are some standard languages to start your
 programming journey.
 
 **Note:** You must add the corresponding auto-generated file in the `.gitignore` file.
 
 ## Authors 🐱‍💻
 
-Hi! I am Adarsh Pandey, a full stack web developer with expertise in ReactJs and Django.
+Hi! I am Adarsh Pandey, a full-stack web developer with expertise in ReactJs and Django.
 I am currently in 3rd year of my Computer Science and Engineering degree and
 like making videos on YouTube about various topics on various programming topics.
 
