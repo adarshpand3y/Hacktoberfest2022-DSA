@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-
 using namespace std;
 class Treenode{
     public:
@@ -53,21 +52,20 @@ void createbylevelorder(Treenode* &root)
         Treenode* front=q.front();
         q.pop();
         
-        cout<<"enter data for left of"<<front->data<<endl;
+        cout<<"enter data for left of "<<front->data<<endl;
         int left,right;
         cin>>left;
         if(left!=-1){
         front->left=new Treenode(left);
         q.push(front->left);
         }
-        cout<<"enter data for right of"<<front->data<<endl;
+        cout<<"enter data for right of "<<front->data<<endl;
         cin>>right;
         if(right!=-1){
         front->right=new Treenode(right);
         q.push(front->right);
         }
     }
-    
 }
 
 
