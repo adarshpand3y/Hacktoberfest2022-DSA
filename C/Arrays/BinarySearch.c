@@ -10,7 +10,7 @@ int main(void) {
   scanf("%d", &key);
   low = 0;
   high = n - 1;
-  mid = (low + high) / 2;
+  mid = low+(high-low) / 2;
 
   while (low <= high) {
     if (array[mid] < key)
