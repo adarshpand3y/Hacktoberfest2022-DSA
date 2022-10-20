@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
   float valueTwo;
   char operator;
   float answer;
+  
 
   printf("Enter calculation:\n\n");
   scanf("%f %c %f", &valueOne, &operator, & valueTwo);
@@ -26,7 +27,8 @@ int main(int argc, char *argv[])
       break;
     case '^': answer = pow(valueOne,valueTwo);
       break;
-    case ' ': answer = sqrt(valueTwo);
+
+    case '$': answer = sqrt(valueTwo);
       break;
     default: goto fail;
     }
