@@ -1,4 +1,4 @@
-public class Solution {
+public class fibonacci {
 
     public static void main(String [] args){
         int var = 0;
