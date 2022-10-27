@@ -24,8 +24,12 @@ bool binarySearch(int *arr,int s,int e,int key){
 }
  
 int main(){
- 
-    int arr[5] = {1,3,5,7,9};
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     int key = 7;
     int s = 0;
     int e = 4;
