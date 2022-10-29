@@ -24,10 +24,10 @@ Treenode* createTree(Treenode* root)
      root=new Treenode(d);
      if(d==-1) return NULL;
 
-    cout<<"enter data for left"<<endl;
+    cout<<"Enter data for left"<<endl;
     root->left=createTree(root->left);
-    cout<<"enter data for right"<<endl;
-    root->right=createTree(root->right);
+    cout<<"Enter data for right"<<endl;
+    root->Right=createTree(root->right);
 
     return root;
 }
@@ -36,7 +36,7 @@ Treenode* createTree(Treenode* root)
 
 void createbylevelorder(Treenode* &root)
 {
-    cout<<"enter data for root node"<<endl;
+    cout<<"Enter data for root node"<<endl;
     int d;
     cin>>d;
     if(d==-1) {
@@ -53,14 +53,14 @@ void createbylevelorder(Treenode* &root)
         Treenode* front=q.front();
         q.pop();
         
-        cout<<"enter data for left of"<<front->data<<endl;
+        cout<<"Enter data for left of"<<front->data<<endl;
         int left,right;
         cin>>left;
         if(left!=-1){
         front->left=new Treenode(left);
         q.push(front->left);
         }
-        cout<<"enter data for right of"<<front->data<<endl;
+        cout<<"Enter data for right of"<<front->data<<endl;
         cin>>right;
         if(right!=-1){
         front->right=new Treenode(right);
