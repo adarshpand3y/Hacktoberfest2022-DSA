@@ -1,0 +1,9 @@
+lst = [10, 11, 12, 13, 14, 15]
+lst.reverse()
+print("Using reverse() ", lst)
+ 
+print("Using reversed() ", list(reversed(lst)))
+
+# Output
+# Using reverse()  [15, 14, 13, 12, 11, 10]
+# Using reversed()  [10, 11, 12, 13, 14, 15]
