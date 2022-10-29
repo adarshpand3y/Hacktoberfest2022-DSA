@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     int t;
     cin>>t;
+    cout <<"hello welcome"<<endl;
 
     while(t--)
     {

@@ -17,8 +17,10 @@ void insertionSort(int *array, int size) {
       array[j+1] = temp;   //insert in right place
    }
 }
+
 int main() {
    int n;
+   cout <<"hello welcome"<<endl;
    cout << "Enter the number of elements: ";
    cin >> n;
    int arr[n];    //create an array with given number of elements
