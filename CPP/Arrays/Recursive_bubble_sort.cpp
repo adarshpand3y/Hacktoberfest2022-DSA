@@ -36,6 +36,7 @@ void printArray(int arr[], int n)
 	for (int i=0; i < n; i++)
 		cout<<arr[i]<<" ";
 	cout<<"\n";
+	cout <<"hello welcome"<<endl;
 }
 
 // Driver program to test above functions
