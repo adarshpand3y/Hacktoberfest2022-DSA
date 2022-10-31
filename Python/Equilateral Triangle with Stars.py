@@ -18,4 +18,6 @@ for i in range(0, size):
 
         print("*", end=' ')
 
-    print('this is done')
+    print('')
+
+    
