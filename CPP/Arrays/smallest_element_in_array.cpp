@@ -2,8 +2,15 @@
 using namespace std;
  
 int sortArr(vector<int>& arr) {
-    sort(arr.begin(),arr.end());
-    return arr[0];
+    int k = INT_MAX;
+ 
+    for(int i=0;i<arr.size();i++)
+    {
+        if(arr[i]<k)
+           k=arr[i];
+    }
+ 
+    return k;
 }
  
 int main() {
