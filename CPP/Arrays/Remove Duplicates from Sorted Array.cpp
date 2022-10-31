@@ -7,13 +7,9 @@ int removeDuplicates(vector<int> &v)
     for (int i = 1; i < v.size();)
     {
         if (v[i] == v[i - 1])
-        {
             v.erase(v.begin() + i);
-        }
         else
-        {
             i++;
-        }
     }
     return v.size();
 }
