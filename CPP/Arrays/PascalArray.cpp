@@ -15,9 +15,7 @@ int main()
 		a[i][i] = 1;
 
 		for(int j=1; j<i;j++)
-		{
 			a[i][j] = a[i-1][j-1] + a[i-1][j];
-		}
 	}
 
 	while(t--)
