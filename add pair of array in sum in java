@@ -1,0 +1,49 @@
+import java.util.HashMap;
+import java.util.StringJoiner;
+
+public class Main {
+
+    static int[] elements = new int[]{1, 5, 6, 5, 3, 7, 4, -1, 11};
+
+    static int findCount(int[] elementsArray) {
+
+        StringJoiner joiner = new StringJoiner(",");
+        joiner.setEmptyValue("No pairs fount"); //if stringJoiner is empty , print this msg
+
+        //hashmap to store count of each elements appearance
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        //final count
+        int count = 0;
+
+        for (int j : elementsArray) {
+            if (!map.containsKey(j)) {
+                //if the map doesn't contain the key, initialize it as 1
+                map.put(j, 1);
+            }
+        }
+
+        for (int j : elementsArray) {
+            if (map.containsKey(j)) {
+                //difference between sum and the element
+                int difference = 10 - j;
+
+                if (map.containsKey(difference)) {
+                    //storing the pairs in a stringjoiner
+                    joiner.add(difference + ":" + j);
+                    count += 1;
+
+                    //removing the key
+                    map.remove(difference);
+                }
+            }
+        }
+
+        System.out.println(joiner.toString());
+        return count;
+    }
+
+    public static void main(String[] args) {
+        System.out.print("Total pairs " + findCount(elements));
+    }
+}
